@@ -1,16 +1,139 @@
 {
+    "Video Settings": {
 
-    "meta": {
+        "resolution": {
 
-		"version": "1.5.0_RT1",
-		"name": "Remote test 1"
-	},
+            "name":"RESOLUTION",
+            "type":"list",
 
+            "listOptions": [
+                { "name": "1600x720", "data": { "resX": 1600, "resY": 720 } },
+                { "name": "1920x1080", "data": { "resX": 1920, "resY": 1080 } },
+                { "name": "1440x2160", "data": { "resX": 1440, "resY": 2160 } }
+            ],
 
-    "settings": [
-        
-        {
-            "Test":"Hello World"
+            "ini":{
+
+                "file":"HawkenSystemSettings",
+                "section": "SystemSettings",
+                "key": [ "resX", "resY" ]
+            }
+        },
+
+        "fullscreen": {
+
+            "name":"FULLSCREEN",
+            "type":"toggle",
+
+            "ini": {
+
+                "file":"HawkenSystemSettings",
+                "section": "SystemSettings",
+                "key": "Fullscreen"
+            }
+        },
+
+        "fpscap": {
+
+            "name":"FRAMERATE CAP",
+            "type":"slider",
+
+            "max": 300.0,
+            "min": 30.0,
+
+            "ini": {
+
+                "file":"HawkenSystemSettings",
+                "section": "SystemSettings",
+                "key": "Fullscreen"
+            }
         }
-    ]
+
+
+    },
+
+    "Game Settings": {
+
+        "mousesensitivity": {
+
+            "name":"MOUSE SENSITIVITY",
+            "type":"slider",
+
+            "min": 20.0000,
+            "max": 7.00000,
+
+            "ini": {
+
+                "file":"HawkenInput",
+                "section": "Engine.PlayerInput",
+                "key": "MouseSensitivity"
+            }
+        },
+
+        "fov": {
+
+            "name":"FIELD OF VIEW",
+            "type":"slider",
+
+            "min": 30.0,
+            "max": 110.0,
+
+            "ini": {
+
+                "file":"HawkenGame",
+                "section": "Robots.R_PlayerController_Base",
+                "key": "FOV_Override"
+            }
+        },
+
+        "cockpitlag": {
+
+            "name":"COCKPIT LAG",
+            "type":"slider",
+
+            "min": 0.6,
+            "max": 1.0,
+
+            "ini": {
+
+                "file":"HawkenGame",
+                "section": "Robots.R_PlayerController_Base",
+                "key": "CockpitLagFactor"
+            }
+        }
+
+    },
+
+    "Graphical Effects": {
+
+        "motionblur": {
+
+            "name":"MOTION BLUR",
+            "type":"toggle",
+
+            "value": true,
+
+            "ini": {
+
+                "file":"HawkenSystemSettings",
+                "section": "SystemSettings",
+                "key": "MotionBlur"
+            }
+        },
+
+        "postfx": {
+
+            "name":"POSTPROCESSING",
+            "type":"toggle",
+
+            "value": true,
+
+            "ini": {
+
+                "file":"HawkenSystemSettings",
+                "section": "SystemSettings",
+                "key": "DepthOfField"
+            }
+        }
+    }
 }
