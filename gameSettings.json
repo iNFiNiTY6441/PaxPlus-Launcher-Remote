@@ -1,0 +1,16 @@
+{
+
+    "meta": {
+
+		"version": "1.5.0_RT1",
+		"name": "Remote test 1"
+	},
+
+
+    "settings": [
+        
+        {
+            "Test":"Hello World"
+        }
+    ]
+}

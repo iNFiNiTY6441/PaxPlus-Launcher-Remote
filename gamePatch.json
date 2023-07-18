@@ -1,5 +1,58 @@
 {
-	
-	"Hello": "World",
-	"Foo": "Bar"
+
+	"meta": {
+
+		"version": "1.5.0_RT1",
+		"name": "Remote test 1"
+	},
+
+
+    "operations": [
+        {
+            "operationType": "iniFilePatcher",
+            "filePath": "/path/to/ini/file.ini",
+            "actions": [
+                {
+                    "actionType": "setValue",
+                    "section": "game",
+                    "key": "volume",
+                    "value": "50"
+                },
+                {
+                    "actionType": "getValue",
+                    "section": "display",
+                    "key": "resolution"
+                },
+                {
+                    "actionType": "deleteValue",
+                    "section": "misc",
+                    "key": "unused_key"
+                }
+            ]
+        },
+        {
+            "operationType": "binaryFilePatcher",
+            "filePath": "../../HawkenGame/CookedPC/Robots.u",
+            "fileOriginalSize": 78019579,
+            "patchAppliedHash": "037E44B400F5363C51DAAA77C98DC21C",
+            "actions": [
+                {
+                    "actionType": "addReplacement",
+                    "offset": 4096,
+                    "bytesFrom": [65, 66, 67, 68, 69],
+                    "bytesTo": [70, 71, 72, 73, 74]
+                },
+                {
+                    "actionType": "addReplacement",
+                    "bytesFrom": [75, 76, 77, 78, 79],
+                    "bytesTo": [80, 81, 82, 83, 84]
+                },
+                {
+                    "actionType": "addReplacement",
+                    "offset": 2048,
+                    "bytesTo": [80, 81, 82, 83, 84]
+                }
+            ]
+        }
+    ]
 }
