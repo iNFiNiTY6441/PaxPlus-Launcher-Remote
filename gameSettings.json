@@ -40,12 +40,13 @@
 
             "max": 300.0,
             "min": 30.0,
-
+            "step": 1,
+            
             "ini": {
 
-                "file":"HawkenSystemSettings",
-                "section": "SystemSettings",
-                "key": "Fullscreen"
+                "file":"HawkenEngine",
+                "section": "Engine.Engine",
+                "key": "MaxSmoothedFrameRate"
             }
         }
 
@@ -58,9 +59,9 @@
 
             "name":"MOUSE SENSITIVITY",
             "type":"slider",
-
-            "min": 20.0000,
-            "max": 7.00000,
+            "step": 1,
+            "min": 0.0000,
+            "max": 50.00000,
 
             "ini": {
 
@@ -78,6 +79,8 @@
             "min": 30.0,
             "max": 110.0,
 
+            "step": 1,
+
             "ini": {
 
                 "file":"HawkenGame",
@@ -93,6 +96,7 @@
 
             "min": 0.6,
             "max": 1.0,
+            "step": 0.1,
 
             "ini": {
 
