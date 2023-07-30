@@ -7,9 +7,9 @@
             "type":"list",
 
             "listOptions": [
-                { "name": "1600x720", "data": { "resX": 1600, "resY": 720 } },
-                { "name": "1920x1080", "data": { "resX": 1920, "resY": 1080 } },
-                { "name": "1440x2160", "data": { "resX": 1440, "resY": 2160 } }
+                { "name": "1600x720", "data": { "ResX": 1600, "ResY": 720 } },
+                { "name": "1920x1080", "data": { "ResX": 1920, "ResY": 1080 } },
+                { "name": "1440x2160", "data": { "ResX": 1440, "ResY": 2160 } }
             ],
 
             "ini":{
