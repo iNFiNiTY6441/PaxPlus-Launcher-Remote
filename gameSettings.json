@@ -16,7 +16,7 @@
 
                 "file":"HawkenSystemSettings",
                 "section": "SystemSettings",
-                "key": [ "resX", "resY" ]
+                "key": [ "ResX", "ResY" ]
             }
         },
 
