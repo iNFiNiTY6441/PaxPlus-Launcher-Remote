@@ -1,143 +1,430 @@
 {
     "Video Settings": {
-
-        "resolution": {
-
-            "name":"RESOLUTION",
-            "type":"list",
-
-            "listOptions": [
-                { "name": "1600x720", "data": { "ResX": 1600, "ResY": 720 } },
-                { "name": "1920x1080", "data": { "ResX": 1920, "ResY": 1080 } },
-                { "name": "1440x2160", "data": { "ResX": 1440, "ResY": 2160 } }
-            ],
-
-            "ini":{
-
-                "file":"HawkenSystemSettings",
-                "section": "SystemSettings",
-                "key": [ "ResX", "ResY" ]
+  
+      "resolution": {
+  
+        "name": "RESOLUTION",
+        "type": "list",
+  
+        "listOptions": [
+          {
+            "name": "1024x576",
+            "data": {
+              "ResX": 1024,
+              "ResY": 576
             }
-        },
-
-        "fullscreen": {
-
-            "name":"FULLSCREEN",
-            "type":"toggle",
-
-            "ini": {
-
-                "file":"HawkenSystemSettings",
-                "section": "SystemSettings",
-                "key": "Fullscreen"
+  
+          },
+          {
+            "name": "1024x768",
+            "data": {
+              "ResX": 1024,
+              "ResY": 768
             }
-        },
-
-        "fpscap": {
-
-            "name":"FRAMERATE CAP",
-            "type":"slider",
-
-            "max": 300.0,
-            "min": 30.0,
-            "step": 1,
-            
-            "ini": {
-
-                "file":"HawkenEngine",
-                "section": "Engine.Engine",
-                "key": "MaxSmoothedFrameRate"
+          },
+          {
+            "name": "1280x720",
+            "data": {
+              "ResX": 1280,
+              "ResY": 720
             }
+          },
+          {
+            "name": "1600x900",
+            "data": {
+              "ResX": 1600,
+              "ResY": 900
+            }
+          },
+          {
+            "name": "1920x1080",
+            "data": {
+              "ResX": 1920,
+              "ResY": 1080
+            }
+          },
+          {
+            "name": "1440x2160",
+            "data": {
+              "ResX": 1440,
+              "ResY": 2160
+            }
+          }
+        ],
+  
+        "ini": {
+  
+          "file": "HawkenSystemSettings",
+          "section": "SystemSettings",
+          "key": [ "ResX", "ResY" ]
         }
-
-
-    },
-
-    "Game Settings": {
-
-        "mousesensitivity": {
-
-            "name":"MOUSE SENSITIVITY",
-            "type":"slider",
-            "step": 1,
-            "min": 0.0000,
-            "max": 50.00000,
-
-            "ini": {
-
-                "file":"HawkenInput",
-                "section": "Engine.PlayerInput",
-                "key": "MouseSensitivity"
-            }
-        },
-
-        "fov": {
-
-            "name":"FIELD OF VIEW",
-            "type":"slider",
-
-            "min": 30.0,
-            "max": 110.0,
-
-            "step": 1,
-
-            "ini": {
-
-                "file":"HawkenGame",
-                "section": "Robots.R_PlayerController_Base",
-                "key": "FOV_Override"
-            }
-        },
-
-        "cockpitlag": {
-
-            "name":"COCKPIT LAG",
-            "type":"slider",
-
-            "min": 0.6,
-            "max": 1.0,
-            "step": 0.1,
-
-            "ini": {
-
-                "file":"HawkenGame",
-                "section": "Robots.R_PlayerController_Base",
-                "key": "CockpitLagFactor"
-            }
+      },
+  
+      "fullscreen": {
+  
+        "name": "FULLSCREEN",
+        "type": "toggle",
+  
+        "ini": {
+  
+          "file": "HawkenSystemSettings",
+          "section": "SystemSettings",
+          "key": "Fullscreen"
         }
-
+      },
+  
+      "vsync": {
+  
+        "name": "VSYNC",
+        "type": "toggle",
+  
+        "ini": {
+  
+          "file": "HawkenSystemSettings",
+          "section": "SystemSettings",
+          "key": "UseVsync"
+        }
+      },
+  
+      "smoothframerate": {
+  
+        "name": "CAPPED SMOOTH FRAMERATE",
+        "type": "toggle",
+  
+        "ini": {
+  
+          "file": "HawkenEngine",
+          "section": "Engine.Engine",
+          "key": "bSmoothFrameRate"
+        }
+      },
+  
+      "fpscap": {
+  
+        "name": "FRAMERATE CAP",
+        "type": "slider",
+  
+        "max": 300.0,
+        "min": 30.0,
+        "step": 1,
+  
+        "ini": {
+  
+          "file": "HawkenEngine",
+          "section": "Engine.Engine",
+          "key": "MaxSmoothedFrameRate"
+        }
+      }
+  
+  
     },
-
+  
+      "Game Settings": {
+  
+          "mousesensitivity": {
+  
+              "name":"MOUSE SENSITIVITY",
+              "type":"slider",
+              "step": 1,
+              "min": 0.0000,
+              "max": 50.00000,
+  
+              "ini": {
+  
+                  "file":"HawkenInput",
+                  "section": "Engine.PlayerInput",
+                  "key": "MouseSensitivity"
+              }
+          },
+  
+          "fov": {
+  
+              "name":"FIELD OF VIEW",
+              "type":"slider",
+  
+              "min": 30.0,
+              "max": 110.0,
+  
+              "step": 1,
+  
+              "ini": {
+  
+                  "file":"HawkenGame",
+                  "section": "Robots.R_PlayerController_Base",
+                  "key": "FOV_Override"
+              }
+          },
+  
+          "cockpitlag": {
+  
+              "name":"COCKPIT LAG",
+              "type":"slider",
+  
+              "min": 0.1,
+              "max": 1.0,
+              "step": 0.1,
+  
+              "ini": {
+  
+                  "file":"HawkenGame",
+                  "section": "Robots.R_PlayerController_Base",
+                  "key": "CockpitLagFactor"
+              }
+          },
+  
+          "hudcolor": {
+              "name": "HUD COLOR",
+              "type": "color",
+      
+              "ini": {
+                "file": "HawkenGame",
+                "section": "Robots.R_PlayerController_Base",
+                "key":[
+                  "CockpitColor_R",
+                  "CockpitColor_G",
+                  "CockpitColor_B"            
+                ]
+              }
+          },
+  
+          "playername": {
+              "name": "PLAYER NAME",
+              "type": "text",
+      
+              "ini": {
+                "file": "HawkenGame",
+                "section": "Robots.R_PlayerController_Base",
+                "key":"LocalPlayerName"
+              }
+          }
+          
+      },
+  
     "Graphical Effects": {
-
-        "motionblur": {
-
-            "name":"MOTION BLUR",
-            "type":"toggle",
-
-            "value": true,
-
-            "ini": {
-
-                "file":"HawkenSystemSettings",
-                "section": "SystemSettings",
-                "key": "MotionBlur"
-            }
-        },
-
-        "postfx": {
-
-            "name":"POSTPROCESSING",
-            "type":"toggle",
-
-            "value": true,
-
-            "ini": {
-
-                "file":"HawkenSystemSettings",
-                "section": "SystemSettings",
-                "key": "DepthOfField"
-            }
+  
+      "msaa": {
+  
+        "name": "MSAA",
+        "type": "toggle",
+  
+        "value": true,
+  
+        "ini": {
+  
+          "file": "HawkenEngine",
+          "section": "SystemSettings",
+          "key": "bAllowD3D9MSAA"
         }
+      },
+  
+      "msaasettings": {
+  
+        "name": "MSAA SAMPLES",
+        "type": "list",
+  
+        "listOptions": [
+          {
+            "name": "x1",
+            "data": {
+              "MaxMultiSamples": 1
+            }
+  
+          },
+          {
+            "name": "x2",
+            "data": {
+              "MaxMultiSamples": 2
+            }
+  
+          },
+          {
+            "name": "x4",
+            "data": {
+              "MaxMultiSamples": 4
+            }
+  
+          },
+          {
+            "name": "x8",
+            "data": {
+              "MaxMultiSamples": 8
+            }
+  
+          }
+        ],
+  
+        "ini": {
+  
+          "file": "HawkenSystemSettings",
+          "section": "SystemSettings",
+          "key": [ "MaxMultiSamples" ]
+        }
+      },
+  
+      "antisotrophy": {
+  
+        "name": "ANISOTROPY",
+        "type": "list",
+  
+        "listOptions": [
+          {
+            "name": "x1",
+            "data": {
+              "MaxAnisotropy": 1
+            }
+  
+          },
+          {
+            "name": "x2",
+            "data": {
+              "MaxAnisotropy": 2
+            }
+  
+          },
+          {
+            "name": "x4",
+            "data": {
+              "MaxAnisotropy": 4
+            }
+  
+          },
+          {
+            "name": "x8",
+            "data": {
+              "MaxAnisotropy": 8
+            }
+  
+          },
+          {
+            "name": "x16",
+            "data": {
+              "MaxAnisotropy": 16
+            }
+  
+          }
+        ],
+  
+        "ini": {
+  
+          "file": "HawkenSystemSettings",
+          "section": "SystemSettings",
+          "key": [ "MaxAnisotropy" ]
+        }
+      },
+  
+      "physx": {
+  
+        "name": "DISABLE PHYSX",
+        "type": "toggle",
+  
+        "value": false,
+  
+        "ini": {
+  
+          "file": "HawkenEngine",
+          "section": "Engine.Engine",
+          "key": "bForceDisablePhysXMeshEffects"
+        }
+      },
+      "bloom": {
+        "name": "BLOOM",
+        "type": "toggle",
+  
+        "value": true,
+  
+        "ini": {
+  
+          "file": "HawkenSystemSettings",
+          "section": "SystemSettings",
+          "key": "Bloom"
+        }
+      },
+  
+      "depthoffield": {
+  
+        "name": "POST PROCESSING",
+        "type": "toggle",
+  
+        "value": true,
+  
+        "ini": {
+  
+          "file": "HawkenSystemSettings",
+          "section": "SystemSettings",
+          "key": "DepthOfField"
+        }
+      },
+  
+      "motionblur": {
+  
+        "name": "MOTION BLUR",
+        "type": "toggle",
+  
+        "value": true,
+  
+        "ini": {
+  
+          "file": "HawkenSystemSettings",
+          "section": "SystemSettings",
+          "key": "MotionBlur"
+        }
+      },
+      "lensflares": {
+  
+        "name": "LENS FLARES",
+        "type": "toggle",
+  
+        "value": true,
+  
+        "ini": {
+  
+          "file": "HawkenSystemSettings",
+          "section": "SystemSettings",
+          "key": "LensFlares"
+        }
+      },
+      "lightshafts": {
+  
+        "name": "LIGHT SHAFTS",
+        "type": "toggle",
+  
+        "value": true,
+  
+        "ini": {
+  
+          "file": "HawkenSystemSettings",
+          "section": "SystemSettings",
+          "key": "bAllowLightShafts"
+        }
+      },
+      "ambientocclusion": {
+  
+        "name": "AMBIENT OCCLUSION",
+        "type": "toggle",
+  
+        "value": true,
+  
+        "ini": {
+  
+          "file": "HawkenSystemSettings",
+          "section": "SystemSettings",
+          "key": "AmbientOcclusion"
+        }
+      },
+      "fogvolumes": {
+  
+        "name": "FOG VOLUMES",
+        "type": "toggle",
+  
+        "value": true,
+  
+        "ini": {
+  
+          "file": "HawkenSystemSettings",
+          "section": "SystemSettings",
+          "key": "FogVolumes"
+        }
+      }
+  
     }
-}
+    }
