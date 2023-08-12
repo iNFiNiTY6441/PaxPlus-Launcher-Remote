@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/VSWorkspaceState.json
+/.vs/slnx.sqlite
+/.vs/PaxPlus-Launcher-Remote/FileContentIndex/read.lock
+/.vs/PaxPlus-Launcher-Remote/FileContentIndex/7dae6ff5-08c4-4139-ad46-1c5c8ca868ec.vsidx
