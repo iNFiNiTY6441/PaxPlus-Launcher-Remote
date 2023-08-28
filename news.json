@@ -1,12 +1,11 @@
 [
-
     {
         "title":"WEEKEND EVENT",
-        "message":"Every Saturday at 2 PM EST - Come join us on Discord"
+        "message":"Every **Saturday** at **2 PM EST** - Come join us on [Discord](https://discord.com/)"
     },
 
     {
         "title":"HELP & FAQ",
-        "message":"Any questions? Check out the Guide"
+        "message":"Any questions? Check out the [Guide](https://example.com)"
     }
 ]
