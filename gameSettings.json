@@ -177,6 +177,22 @@
                   "key": "MouseSensitivity"
               }
           },
+
+          "invert_y": {
+
+            "name": "INVERT Y",
+            "type": "toggle",
+      
+            "value": false,
+      
+            "ini": {
+      
+              "file": "HawkenInput",
+              "section": "Engine.PlayerInput",
+              "key": "bInvertMouse"
+            }
+
+          },
   
           "fov": {
   
