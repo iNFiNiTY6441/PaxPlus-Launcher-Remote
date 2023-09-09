@@ -1,6 +1,6 @@
 {
 
-    "update_interval": 43200,
+    "update_interval": 120000,
     "masterserver_url": "http://paxhawken.ddns.net:9000",
     "release_url": "https://github.com/iNFiNiTY6441/PaxPlus-Launcher/releases",
 

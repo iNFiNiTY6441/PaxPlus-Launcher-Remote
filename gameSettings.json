@@ -145,7 +145,7 @@
         "name": "FRAMERATE CAP",
         "type": "slider",
   
-        "max": 300.0,
+        "max": 275.0,
         "min": 30.0,
         "step": 1,
   
@@ -258,19 +258,8 @@
                   "CockpitColor_B"            
                 ]
               }
-          },
-  
-          "playername": {
-              "name": "PLAYER NAME",
-              "type": "text",
-      
-              "ini": {
-                "file": "HawkenGame",
-                "section": "Robots.R_PlayerController_Base",
-                "key":"LocalPlayerName"
-              }
           }
-          
+
       },
   
     "Graphical Effects": {
