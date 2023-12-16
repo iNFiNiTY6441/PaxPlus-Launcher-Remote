@@ -1,7 +1,7 @@
 {
 
     "update_interval": 120000,
-    "masterserver_url": "http://78.47.65.130:281",
+    "masterserver_url": "http://78.47.61.126:9000",
     "release_url": "https://github.com/iNFiNiTY6441/PaxPlus-Launcher/releases",
 
     "versions": {
